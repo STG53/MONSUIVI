@@ -30,6 +30,10 @@ const dashboardStyles = StyleSheet.create({
     fontSize: 20,
     marginBottom: 20,
   },
+  textTitre: {
+    fontSize: 60,
+    marginBottom: 20,
+  },
   darkText: {
     color: "#B6BFD3",
   },

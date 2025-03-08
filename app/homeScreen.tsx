@@ -1,4 +1,4 @@
-import { View, Text, Switch, StyleSheet, SafeAreaView } from "react-native";
+import { View, Text, Switch, SafeAreaView } from "react-native";
 import React from "react";
 import { useTheme } from "../assets/styles/themeProvider";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
@@ -26,6 +26,9 @@ const HomeScreen = () => {
           value={isDarkMode}
           style={dashboardStyles.switch}
         />
+      </View>
+      <View>
+        <Text style={dashboardStyles.textTitre}>SGAGCO</Text>
       </View>
     </SafeAreaView>
   );
