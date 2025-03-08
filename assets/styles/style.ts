@@ -3,6 +3,31 @@ import { StyleSheet } from "react-native";
 const dashboardStyles = StyleSheet.create({
   //  Commun
 
+  containerSMP: {
+    flex: 1,
+    backgroundColor: "#000000",
+    //alignItems: "center",
+    //justifyContent: "center",
+  },
+  darkContainer: {
+    backgroundColor: "#000000",
+  },
+  lightContainer: {
+    backgroundColor: "#fff",
+  },
+  text: {
+    fontSize: 20,
+    marginBottom: 20,
+  },
+  darkText: {
+    color: "#B6BFD3",
+  },
+  lightText: {
+    color: "#000",
+  },
+});
+export default dashboardStyles;
+/*
   couvImg: {
     width: 350,
     height: 350,
@@ -16,12 +41,6 @@ const dashboardStyles = StyleSheet.create({
     width: 300,
     height: 300,
     resizeMode: "contain",
-  },
-  containerSMP: {
-    flex: 1,
-    backgroundColor: "#000000",
-    alignItems: "center",
-    justifyContent: "space-between",
   },
   titre1SMP: {
     color: "#B6BFD3", // gris SMP
@@ -50,6 +69,38 @@ const dashboardStyles = StyleSheet.create({
     fontSize: 52,
     marginTop: 0,
   },
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center",
+  },
+  switch: {
+    transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }],
+  },
+  text: {
+    fontSize: 24,
+    marginBottom: 20,
+  },
+  darkText: {
+    color: "#fff",
+  },
+  lightText: {
+    color: "#000",
+  },
+  darkContainer: {
+    backgroundColor: "#333",
+  },
+  lightContainer: {
+    backgroundColor: "#fff",
+  },
+  switchContainer: {
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 10,
+  },
 });
 
-export default dashboardStyles;
+*/
