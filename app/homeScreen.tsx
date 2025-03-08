@@ -17,27 +17,14 @@ const HomeScreen = () => {
           : dashboardStyles.lightContainer,
       ]}
     >
-      <Text
-        style={[
-          dashboardStyles.text,
-          isDarkMode ? dashboardStyles.darkText : dashboardStyles.lightText,
-        ]}
-      >
-        {isDarkMode ? "Dark Mode" : "Light Mode"}
-      </Text>
-      <View style={styles.switchContainer}>
-        <Icon
-          name={isDarkMode ? "weather-night" : "weather-sunny"}
-          size={30}
-          color={isDarkMode ? "#fff" : "#000"}
-        />
+      <View style={dashboardStyles.switchContainer}>
         <Switch
-          trackColor={{ false: "#757577", true: "#81b0ff" }}
-          thumbColor={isDarkMode ? "#f5bb4b" : "#f4f3f4"}
-          ios_backgroundColor="#3e3e3e"
+          trackColor={{ false: "#B6BFD3", true: "#fff" }}
+          thumbColor={isDarkMode ? "#B6BFD3" : "#000"}
+          ios_backgroundColor="#B6BFD3"
           onValueChange={toggleTheme}
           value={isDarkMode}
-          style={styles.switch}
+          style={dashboardStyles.switch}
         />
       </View>
     </SafeAreaView>
@@ -45,25 +32,3 @@ const HomeScreen = () => {
 };
 
 export default HomeScreen;
-
-const styles = StyleSheet.create({
-  switch: {
-    transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }],
-  },
-  text: {
-    fontSize: 24,
-    marginBottom: 20,
-  },
-  darkText: {
-    color: "#fff",
-  },
-  lightText: {
-    color: "#000",
-  },
-
-  switchContainer: {
-    flexDirection: "column",
-    alignItems: "center",
-    gap: 10,
-  },
-});

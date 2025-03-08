@@ -15,6 +15,17 @@ const dashboardStyles = StyleSheet.create({
   lightContainer: {
     backgroundColor: "#fff",
   },
+  switch: {
+    transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }],
+    //height: 10,
+  },
+  switchContainer: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    gap: 10,
+    marginRight: 10,
+    //height: 10,
+  },
   text: {
     fontSize: 20,
     marginBottom: 20,
@@ -77,30 +88,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center",
   },
-  switch: {
-    transform: [{ scaleX: 1.2 }, { scaleY: 1.2 }],
-  },
-  text: {
-    fontSize: 24,
-    marginBottom: 20,
-  },
-  darkText: {
-    color: "#fff",
-  },
-  lightText: {
-    color: "#000",
-  },
-  darkContainer: {
-    backgroundColor: "#333",
-  },
-  lightContainer: {
-    backgroundColor: "#fff",
-  },
-  switchContainer: {
-    flexDirection: "column",
-    alignItems: "center",
-    gap: 10,
-  },
+  
 });
 
 */
