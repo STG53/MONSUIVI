@@ -23,6 +23,9 @@
     },
     "web": {
       "favicon": "./assets/images/SGAGCO/SGAGCO-Logo_Coul.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

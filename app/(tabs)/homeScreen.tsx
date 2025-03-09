@@ -1,8 +1,8 @@
 import { View, Text, Switch, SafeAreaView } from "react-native";
 import React from "react";
-import { useTheme } from "../assets/styles/themeProvider";
+import { useTheme } from "../../assets/styles/themeProvider";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import dashboardStyles from "../assets/styles/style";
+import dashboardStyles from "../../assets/styles/style";
 
 const HomeScreen = () => {
   const { theme, toggleTheme } = useTheme();

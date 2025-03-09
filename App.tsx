@@ -1,5 +1,5 @@
 import ThemeProvider from "./assets/styles/themeProvider";
-import HomeScreen from "./app/homeScreen";
+import HomeScreen from "./app/(tabs)/homeScreen";
 
 export default function App() {
   return (
